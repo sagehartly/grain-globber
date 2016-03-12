@@ -1,6 +1,6 @@
 var listGrains = ['Peanuts', 'Beans', 'Lentils'];
 
-grains.forEach(function (item) {
+grains.forEach(function (grains) {
 
   var $ul = $('ul');
   var $li = $('<li>');
@@ -9,10 +9,10 @@ grains.forEach(function (item) {
   var $p = $('<p>');
 
   $ul.append($li);
-  $img.attr('src', 'images/' + item.img);
+  $img.attr('src', 'images/' + grains.img);
   $li.append($img);
-  $h2.html(item.name);
+  $h2.html(grains.name);
   $li.append($h2);
-  $p.html(item.desc);
+  $p.html(grains.desc);
   $li.append($p);
 });

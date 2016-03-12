@@ -24,9 +24,11 @@ html {
 }
 
 .grains h2 {
-  font-weight: bold;
+  font-size: 18px;
+  display: block;
 }
 
 .grains p {
   font-style: italic;
+  display: block;
 }
