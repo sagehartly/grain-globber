@@ -6,9 +6,10 @@ var $p = $('<p>');
 
 grains.forEach(function(item) {
 $ul.append($li);
-$img.attr('src', 'images/' + item.img)
+$img.attr('src', 'images/' + item.img);
 $li.append($img);
-$h2.html(item.name)
+$h2.html(item.name);
 $li.append($h2);
+$p.html(item.desc);
 $li.append($p);
 });
